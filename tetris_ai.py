@@ -84,7 +84,7 @@ class TetrisAI(object):
         for x, y in shape.getCoords(direction, x0, 0):
             data[y + dist, x] = shape.shape
 
-    def run_prog():
+    def run_prog(self):
         print("running!")
 
     def calculateScore(self, step1Board, d1, x1, dropDist):

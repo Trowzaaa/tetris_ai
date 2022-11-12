@@ -228,7 +228,7 @@ class Board(QFrame):
 def start():
     SHAPE.initialize()
     reload(tetris_ai)
-    tetris_ai.TETRIS_AI.run_prog() 
+    tetris_ai.run_prog()
     # random.seed(32)
     SHAPE.finalize()
     reload(tetris_ai)

